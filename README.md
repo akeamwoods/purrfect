@@ -1,6 +1,15 @@
 # PurrfectPixels
 
+## Live Demo
+https://akeamwoods.github.io/purrfect/
+
 ## Screenshots:
+
+## Homepage - Mobile
+<img src="https://github.com/akeamwoods/purrfect/assets/19963177/ae8d7208-bc1f-44ec-8725-93bbd04ba2c8" width="300">
+<img src="https://github.com/akeamwoods/purrfect/assets/19963177/09734f40-30ef-44c3-82db-e275b532e9aa" width="300">
+<img src="https://github.com/akeamwoods/purrfect/assets/19963177/c06e6b3a-28e6-4c77-9aa1-5f3b1a7d8534" width="300">
+
 ### Homepage:
 <img width="1000" alt="Screenshot 2023-12-15 at 08 05 19" src="https://github.com/akeamwoods/purrfect/assets/19963177/32bc7a44-fb8b-4eb3-b068-730c76c7f08c">
 
@@ -67,3 +76,12 @@ I am a big advocate for maintainability, and keeping components clean and resuab
 <img width="1000" alt="Screenshot 2023-12-15 at 08 28 39" src="https://github.com/akeamwoods/purrfect/assets/19963177/b65eee58-c89e-4c6e-85b3-48ec37fe0608">
 
 As you can see, storybook allows us to visually inspect/test all the props of the Card component in complete isolation from the rest of the application, allowing me to live update props.
+
+## Performance Considerations
+Obviously performance is important, and ensuring the project is optimised can lead to significant differences in performance. In this project I have used memoisation where necessary to avoid duplicate re-renders. I have also added code splitting/lazy loading for the different routes, so this will have an impact on performance as not everything is loaded as one big chunk:
+
+<img width="600" alt="Screenshot 2023-12-15 at 08 28 39" src="https://github.com/akeamwoods/purrfect/assets/19963177/27e28dc1-abc1-4e50-b5ab-0fa9188cac0b">
+
+## Things to consider for further improvement:
++ Make use of react-query optimisitic updates and global state to decrease api calls
++ Pagination/virtualisation - At the moment we cap how much data is returned, however it would be good to implement a proper approach.
