@@ -29,18 +29,31 @@ const CatCard: React.FC<CatCardProps> = ({
           src={cat.url}
           alt={cat.originalFilename}
           className={styles.catImage}
+          data-testid="cat-image"
         />
       </div>
       <div className={styles.actions}>
-        <button onClick={onToggleFavourite} className={styles.favouriteButton}>
+        <button
+          onClick={onToggleFavourite}
+          className={styles.favouriteButton}
+          data-testid="toggle-favourite"
+        >
           {isFavourite ? <GoHeartFill /> : <GoHeart />}
         </button>
         <div className={styles.votingContainer}>
-          <button onClick={onUpvote} className={styles.upvoteButton}>
+          <button
+            onClick={onUpvote}
+            className={styles.upvoteButton}
+            data-testid="upvote-button"
+          >
             <GoArrowUp />
           </button>
           <p className={styles.score}>{score}</p>
-          <button onClick={onDownvote} className={styles.downvoteButton}>
+          <button
+            onClick={onDownvote}
+            className={styles.downvoteButton}
+            data-testid="downvote-button"
+          >
             <GoArrowDown />
           </button>
         </div>
