@@ -1,0 +1,48 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 700px;
+}
+
+.imageContainer {
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+  height: calc(100% - 50px);
+}
+
+.catImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.actions {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  button {
+    padding: 0;
+    background: transparent;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+}
+
+.favouriteButton {
+  color: #e72121;
+}
+
+.votingContainer {
+  display: flex;
+  gap: 5px;
+}

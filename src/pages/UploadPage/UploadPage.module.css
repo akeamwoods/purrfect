@@ -1,0 +1,62 @@
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.previewCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: calc(100% - 40px);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.previewImageContainer {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.dropzone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 10;
+}
+
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.uploadButton {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.2em;
+  gap: 10px;
+  display: flex;
+  align-self: center;
+}

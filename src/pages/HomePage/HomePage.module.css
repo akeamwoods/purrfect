@@ -1,0 +1,10 @@
+.catGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 40px;
+}
