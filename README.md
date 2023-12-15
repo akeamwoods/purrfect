@@ -31,6 +31,8 @@ Whilst I have lots of experience working with Webpack in the past (and Rollup fo
 + setup .env file with api key as VITE_CAT_API_KEY='yourApiKey'
 + run **pnpn i** to install dependencies
 + run **pnpn dev** to start
++ run **pnpn test** to run tests
++ run **pnpn storybook** to run storybook
 
 This project also has storybook, to start run **pnpn storybook**
 
@@ -79,6 +81,9 @@ As you can see, storybook allows us to visually inspect/test all the props of th
 
 ## Testing
 I have provided tests for the CatCard component using jest and react-testing-library. 
+
+<img width="569" alt="Screenshot 2023-12-15 at 10 46 14" src="https://github.com/akeamwoods/purrfect/assets/19963177/320ccb4e-d6f2-46b7-b6c6-13b68389a773">
+
 
 ## Performance Considerations
 Obviously performance is important, and ensuring the project is optimised can lead to significant differences in performance. In this project I have used memoisation where necessary to avoid duplicate re-renders. I have also added code splitting/lazy loading for the different routes, so this will have an impact on performance as not everything is loaded as one big chunk:
