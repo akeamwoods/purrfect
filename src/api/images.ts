@@ -16,7 +16,7 @@ export const uploadCatImage = async (file: File): Promise<AxiosResponse> => {
 };
 
 export const getMyUploadedCats = async ({
-  limit = 10,
+  limit = 100,
   page = 0,
   order = "DESC",
 }: {
