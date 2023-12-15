@@ -1,11 +1,14 @@
 {
   "name": "my-vue-app",
+  "homepage": "https://akeamwoods.github.io/purrfect",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build",
     "lint": "eslint . --ext .ts,.tsx --report-unused-disable-directives --max-warnings 0 && tsc --noEmit",
     "preview": "vite preview",
     "prepare": "husky install",
@@ -44,6 +47,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-storybook": "^0.6.15",
+    "gh-pages": "^6.1.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.1.1",
