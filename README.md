@@ -77,6 +77,9 @@ I am a big advocate for maintainability, and keeping components clean and resuab
 
 As you can see, storybook allows us to visually inspect/test all the props of the Card component in complete isolation from the rest of the application, allowing me to live update props.
 
+## Testing
+I have provided tests for the CatCard component using jest and react-testing-library. 
+
 ## Performance Considerations
 Obviously performance is important, and ensuring the project is optimised can lead to significant differences in performance. In this project I have used memoisation where necessary to avoid duplicate re-renders. I have also added code splitting/lazy loading for the different routes, so this will have an impact on performance as not everything is loaded as one big chunk:
 
